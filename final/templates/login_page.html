@@ -1,0 +1,26 @@
+{% extends 'basetemplate.html' %}
+{% block title %}
+    Login Page
+{% endblock %}
+
+{% block body%}
+<body class="text-center">
+    <div class="container">
+        <form method="POST" class="signin" style="color:white">
+            <h1 class="h3 mb-3 font-weight-normal">
+                Please Login
+            </h1>
+            <br>
+            {{ form.csrf_token }}
+            {{ form.username.label() }}
+            {{ form.username(class="form-control", placeholder="User Name") }}
+
+            {{ form.password.label() }}
+            {{ form.password(class="form-control", placeholder="Password") }}
+
+            <br>
+            {{ form.login(class="btn btn-lg btn-primary") }}
+        </form>
+    </div>
+</body>
+{% endblock %}

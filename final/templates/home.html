@@ -1,0 +1,29 @@
+{% extends 'basetemplate.html' %}
+{% block title %}
+    COVID Passport
+{% endblock %}
+
+{% block body%}
+    <h1>What is COVID Passport?</h1>
+    <p>
+        COVID Passport is a web application that helps the community navigate reopening after this crazy pandemic.
+        This app is divided into two halves (<b>admins</b> and <b>users</b>).<br><br>
+        <b>Admins</b> can add/update user's COVID status, add other admins, and dispaly data on current users statuses in the database.<br>
+        <b>Users</b> can track their vacination status, use this as a passport, and get more information about COVID.<br><br>
+        <b>Admins</b> are the doctors, nurses, and other frontline workers who provide the shots and update the database. 
+        Only the <b>Admins</b> can interact with the database. <b>Users</b> is the general pubplic. They can view their shot information and user
+        it to validate they are vacinated. <br>
+        With your help we can stop the spread of COVID and return to normal. This will only be possible if everyone gets vacinated. For more information on CDC guidlines
+        see the more information tab.
+    </p>
+
+    <h1>How to use COVID Passport?</h1>
+    <p>
+        <strong>Passport:</strong> Once logged in, <b>admins</b> and <b>users</b> can see their COVID Passport. This has their vacination status and information about when and
+        what vacine they took.
+        <br>
+        <strong>Register:</strong> Once logged in, <b>Admins</b> can register new <b>admins</b> and <b>users</b>.
+        <strong>Update:</strong> Once logged in, <b>Admins</b> can update the information for any <b>admins</b> and <b>users</b>.
+        <strong>Stats:</strong> Once logged in, <b>Admins</b> can statistics on the overall database.
+    </p>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'basetemplate.html' %}
+{% block title %}
+    User info
+{% endblock %}
+
+{% block body%}
+<h1 class="h3 mb-3 font-weight-normal">
+    COVID Passport information for 
+</h1>
+<table class="table table-hover table-dark">
+    <thead>
+        <tr>
+            <!-- User information Columbs -->
+            <th scope="col">Vacination Status</th>
+            <th scope="col">Manufacturer</th>
+            <th scope="col">1st Does Date</th>
+            <th scope="col">2nd Does Date</th>
+            <th scope="col">Clinic Site</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Row information: -->
+        <tr>
+            <td>{{ data.vacination_status }}</td>
+            <td>{{ data.product_name }}</td>
+            <td>{{ data.first_does_date }}</td>
+            <td>{{ data.second_dose_date }}</td>
+            <td>{{ data.location }}</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}
